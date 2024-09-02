@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Moderustic:wght@300..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/*generales*/
+img{
+  width: 100%;
+}
+.f-texto{
+    font-family: "Moderustic", sans-serif;
+}
+.centrar-texto{
+    text-align: center;
+}
+header{
+    background-color: #504b45;
+    width: 100%;
+    padding: 15px;
+}
+.logo-barra a{
+    text-decoration: none;
+}
+.logo-barra h1{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: center;
+}
+
+.logo-barra h1 span{
+    font-weight: 300;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+header ul li{
+    margin: 5px;
+}
+.barra a{
+    text-decoration: none;
+    color: #ffff;
+    padding: 5px 10px 5px 5px;
+    font-size: 20px;
+}
+.barra a:hover{
+    color: rgba(205, 145, 34, 0.833);
+}
+
+
+/*portada de incio*/
+.portada{
+    background-image: url(./img/granos_cafe.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+.portada::after {
+    content: '';
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+/*Estilo para transparecia en la portada*/
+}
+.frase-inicio{
+    color: #ffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+/*frase de la portada*/
+    position: relative;
+    z-index: 1;
+
+}
+.frase-inicio h2{
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.frase-inicio p{
+    font-size: 30px;
+}
+
+/*contenido recetas*/
+.contenido-r{
+    border-top: 4px solid #e7daca32;;
+    background-color: #e7daca32;
+}
+.titulo-receta{
+    padding: 30px ;
+}
+.titulo-receta h2{
+    font-size: 45px;
+    text-align: center;
+}
+.recetas{
+    padding: 45px;
+}
+.recetas img{
+    padding-top: 30px;
+    height: 400px;
+}
+.desc-receta p{
+    padding-top: 30px;
+    text-align:justify;
+}
+/*pagina nosotros*/
+.titulo-nosotros h2{
+    font-size: 45px;
+}
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:  #e7daca32;
+}
+.nosotros img{
+    width: 100%;
+    height: 450px;
+}
+/*Botones*/
+.boton{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 300;
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 45px;
+
+}
+.boton-recetas{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+
+
+}
+.btn-recetas{
+    border: 1px solid rgb(189, 189, 167);
+    background-color: rgb(80, 79, 52);
+    border-radius: 5px;
+}
+
+
+.btn-recetas:hover{
+    background-color: rgb(195, 195, 161);
+}
+/*pie de página*/
+footer{
+    color: #ffffff;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    background-color: #504b45;
+    height: 100%;
+    padding-top: 30px;
+    margin-top: 40px;
+}
