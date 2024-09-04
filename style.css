@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Moderustic:wght@300..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Indie+Flower&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Moderustic:wght@300..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nerko+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 /*generales*/
 img{
   width: 100%;
@@ -6,13 +7,23 @@ img{
 .f-texto{
     font-family: "Moderustic", sans-serif;
 }
+.fu-texto{
+    font-family:"Indie Flower", cursive;
+}
 .centrar-texto{
     text-align: center;
 }
 header{
-    background-color: #504b45;
+    background-color: rgb(80, 75, 69);
     width: 100%;
     padding: 15px;
+    position: fixed;
+    z-index: 100;
+}
+.logo-barra{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .logo-barra a{
     text-decoration: none;
@@ -26,15 +37,18 @@ header{
     padding: 5px;
     justify-content: center;
 }
-
 .logo-barra h1 span{
     font-weight: 300;
+}
+nav{
+    padding: 5px 5px;
 }
 header ul{
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: end;
+    align-items: center;
 }
 header ul li{
     margin: 5px;
@@ -42,11 +56,11 @@ header ul li{
 .barra a{
     text-decoration: none;
     color: #ffff;
-    padding: 5px 10px 5px 5px;
+    padding: 5px 5px 5px 5px;
     font-size: 20px;
 }
 .barra a:hover{
-    color: rgba(205, 145, 34, 0.833);
+    color: rgba(205, 145, 34);
 }
 
 
@@ -86,12 +100,12 @@ header ul li{
 
 }
 .frase-inicio h2{
-    font-size: 45px;
+    font-size: 35px;
     text-transform: uppercase;
     font-weight: 700;
 }
 .frase-inicio p{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 /*contenido recetas*/
@@ -112,25 +126,229 @@ header ul li{
 .recetas img{
     padding-top: 30px;
     height: 400px;
+    border-radius: 6px;
 }
-.desc-receta p{
-    padding-top: 30px;
+.desc-receta{
+    padding-top:15px;
     text-align:justify;
 }
-/*pagina nosotros*/
-.titulo-nosotros h2{
+.desc-receta h4{
+    padding-top: 15px;
+}
+/*contenido porqué tomar café*/
+.division{
+    border: 1px solid #c6ab66;
+}
+.titulo-op {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    text-transform: uppercase;
+}
+.titulo-op h3{
+    font-size: 40px;
+}
+.opciones{
+    padding-bottom: 60px;
+}
+.llevar-t{
+    background-color: #a59870;
+}
+.llevar-t2{
+    background-color: #9d9489;
+}
+.desc-opciones{
+    background-color: #9d9489;
+    color: #ffffff;
+    padding: 15px;
+    padding-bottom: 0;
+}
+.desc-opciones2{
+    background-color: #a59870;
+    color: #ffffff;
+    padding: 15px;
+    padding-bottom: 0;
+}
+.llevar-t img{
+    padding: 15px;
+}
+.llevar-t2 img{
+    padding: 15px;
+}
+.oculto{
+    display: none;
+}
+/*pagina nosotros */
+.portada-nosotros{
+    background-image: url(./img/nosotros_cafe.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+.portada-nosotros::after {
+    content: '';
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+/*Estilo para transparecia en la portada*/
+}
+.frase-nosotros{
+    color: #ffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+/*frase de la portada*/
+
+    position: relative;
+    z-index: 1;
+}
+.frase-nosotros h2{
     font-size: 45px;
 }
-.nosotros {
+.contenido-nosotros{
+    padding: 60x;
+    margin: 50px;
+    border: 1px solid #583408;
+}
+.titulo-nosotros h2{
+    font-size: 45px;
+    padding: 50px;
+    color: #583408;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+}
+.contiene-texto{
+    padding: 15px;
+    background-color: #9d948969;
+    border-left: 1px solid #583408;
+}
+.video h3{
+    padding-bottom: 30px;
+}
+.video{
+    color: #583408;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    max-width: 100%;
+    height: 350;
+}
+.contacto{
+    padding: 0;
+    margin: 0;
+}
+.contacto h2{
+    color: #583408;
+    font-weight: 700;
+    font-size: 18px;
+}
+.contacto p{
+    color: #583408;
+    font-size: 18px;
+}
+.img-icono img{
+    width: 30px;
+    margin: 20px;
+}
+
+
+/*redes sociales*/
+.titulo-rs h3{
+    font-size: 35px;
+    padding-top: 60px;
+    text-align: center;
+    text-transform:capitalize;
+}
+.titulo-rs p{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.enlaces {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.enlaces img{
+    width: 50px;
+    margin: 25px;
+}
+/*recetas*/
+.portada-recetas{
+    background-image: url(./img/taza_cafe_cristal.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+
+    /*posicionar las letras de la portada*/
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color:  #e7daca32;
+    position: relative;
 }
-.nosotros img{
+.portada-recetas::after{
+    content: '';
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /*Estilo para transparecia en la portada*/
+}
+.frase-recetas{
+    color: #ffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+/*frase de la portada*/
+    position: relative;
+    z-index: 1;
+
+}
+.title-r h2{
+    font-size: 45px;
+    color: #583408;
+    text-align: center;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+.titulo-recetas h3{
+    color: #583408;
+}
+.contiene-recetas{
+    padding-top: 60px;
+}
+.contiene-recetas img{
     width: 100%;
-    height: 450px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+}
+.enlaces img{
+    width: 35px;
+    height: 35px;
 }
 /*Botones*/
 .boton{
@@ -151,8 +369,6 @@ header ul li{
     text-align: center;
     margin-top: 60px;
     margin-bottom: 30px;
-
-
 }
 .btn-recetas{
     border: 1px solid rgb(189, 189, 167);
@@ -160,11 +376,34 @@ header ul li{
     border-radius: 5px;
 }
 
-
 .btn-recetas:hover{
     background-color: rgb(195, 195, 161);
 }
-/*pie de página*/
+
+.boton-mostrar{
+    border: 1px solid rgb(189, 189, 167);
+    background-color: rgb(80, 79, 52);
+    border-radius: 5px;
+    width: 150px;
+
+}
+.boton-mostrarOcultar{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.boton-ocultar{
+    padding-top: 2px;
+    border: 1px solid rgb(189, 189, 167);
+    background-color: rgb(80, 79, 52);
+    border-radius: 5px;
+}
+.boton-ocultar:hover{
+    background-color: rgb(195, 195, 161);
+}
+
+/*pie de p+agina*/
 footer{
     color: #ffffff;
     font-weight: 300;
@@ -176,4 +415,20 @@ footer{
     height: 100%;
     padding-top: 30px;
     margin-top: 40px;
+}
+
+
+section h4{
+    padding-top: 15px;
+}
+section p{
+    padding: 0;
+    margin-left: 0px;
+}
+.copyright{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    align-items: center;
 }
