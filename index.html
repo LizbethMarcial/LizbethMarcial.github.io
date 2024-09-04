@@ -36,7 +36,7 @@
     <header class="container-fluid">
         <div class="row">
             <div class="col-md-6 logo-barra">
-                <a href="index.html"><h1>AMARGO&<span>DULCE</span></h1></a>
+                <a href="index.html" class="logo"><h1>AMARGO&<span>DULCE</span></h1></a>
             </div>
             <div class="col-md-6 barra">
                 <nav>
@@ -66,10 +66,10 @@
                 </div>
                 <div class="desc-receta">
                     <img src="./img/cafe_cortaddo.webp" alt="café cortado">
-                    <h4 class="centrar-texto">Ingredientes</h4>
+                    <h4>Ingredientes</h4>
                     <li>25 ml de Espresso</li>
                     <li >Leche caliente y espuma de leche</li>
-                    <h4 class="centrar-texto">Preparación</h4>
+                    <h4>Preparación</h4>
                     <p>Coloque el vaso de café Espresso bajo la salida de café. <br>Prepare un Cortado.</p>
                 </div>
             </div>
@@ -110,6 +110,10 @@
             <h3 class="centrar-texto p-uno fu-texto">momento único para relajarse y disfrutar</h3>
        </div>
        <div class="row">
+            <div class="boton-mostrarOcultar f-texto">
+                <button id="mostrar-button" onclick="toggleCajas()" class="boton boton-mostrar">Más Información</button>
+                <button id="ocultar-button" onclick="toggleCajas()" style="display: none;" class="boton boton-ocultar">Ocultar</button>
+            </div>
             <div class="col-md-3 opciones">
                 <div class="llevar-t">
                     <img src="./img/para_llevar_cafe.png" alt="" class="centrar-texto">
@@ -147,10 +151,7 @@
                 </div>
             </div>
        </div>
-       <div class="boton-mostrarOcultar f-texto">
-        <button id="mostrar-button" onclick="toggleCajas()" class="boton boton-mostrar">Más Información</button>
-        <button id="ocultar-button" onclick="toggleCajas()" style="display: none;" class="boton boton-ocultar">Ocultar</button>
-       </div>
+      
     </div>
         
     </main>
